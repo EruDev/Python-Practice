@@ -2,7 +2,7 @@
 
 #### 以下是个人觉得还不错的小例子
 
-- 输入某年某月某日，判断这一天是这一年的第几天 https://github.com/EruDev/Python-Practice/blob/master/%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B100%E4%BE%8B/04.py
+- (输入某年某月某日，判断这一天是这一年的第几天)[https://github.com/EruDev/Python-Practice/blob/master/%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B100%E4%BE%8B/04.py]
 
 - 格式化输出当前时间 https://github.com/EruDev/Python-Practice/blob/master/%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B100%E4%BE%8B/10.py
 

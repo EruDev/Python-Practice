@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<h3>用户注册</h3>
+
+	<!--
+	?username=Eru
+	&pwd=123
+	&gender=male
+	&like=coding&like=travel&like=reading
+	&info=try+to+be+a+pythoner
+	-->
+	<form action="http://www.baidu.com" method="post">	
+		<div>
+			<label for="username">用户名：</label>
+			<input type="text" name="username" id="username">
+		</div>
+		<br>
+		<div>
+			<label>密码：</label>
+			<input type="password" name="pwd">
+		</div>
+		<br>
+		<div>
+			<label>性别：</label>
+			<input type="radio" name="gender" value="male">男
+			<input type="radio" name="gender" value="female">女
+		</div>
+		<br>
+		<div>
+			<label>爱好：</label>
+			<input type="checkbox" name="like" value="coding">敲代码
+			<input type="checkbox" name="like" value="travel">旅行
+			<input type="checkbox" name="like" value="reading">看书
+		</div>
+		<br>
+		<div>
+			<label>籍贯：</label>
+			<select>
+				<option value="0">北京</option>
+				<option value="1">上海</option>
+				<option value="2">广州</option>
+				<option value="3">杭州</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label>照片：</label>
+			<input type="file" name="">
+		</div>
+		<br>
+		<div>
+			<label>个人描述：</label>
+			<input type="textarea" name="info">
+		</div>
+		<input type="submit" name="" value="提交">
+		<input type="reset" name="" value="重置">
+		<input type="button" name="" value="按钮">
+		<input type="image" name="" src="../.01/new.png">
+	</form>
+	
+</body>
+</html>

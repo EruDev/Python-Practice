@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航条2</title>
+	<style type="text/css">
+		.menu{
+			width: 960px;
+			height: 40px;
+			background-color: #55a8ea;
+			padding: 0;
+			list-style: none;
+			position: relative;
+		}
+		.menu li{
+			float: left;
+			width: 100px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.menu li a{
+			font: 14px/40px 'Microsoft Yahei';
+			color: #fff;
+			text-decoration: none;
+		}
+		.menu li:hover{
+			background-color: #00619f;
+		}
+		.menu .active{
+			background-color: #00619f;
+		}
+		.menu .new{
+			background: url(images/new.png) no-repeat;
+			width: 33px;
+			height: 20px;
+			position: absolute;
+			left: 433px;
+			top: -9px;
+		}
+		.menu .new:hover{
+			background: url(images/new.png) no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<ul class="menu">
+		<li class="active"><a href="#">首页</a></li>
+		<li><a href="#">网站建设</a></li>
+		<li><a href="#">网站建设</a></li>
+		<li><a href="#">网站建设</a></li>
+		<li><a href="#">网站建设</a></li>
+		<li><a href="#">网站建设</a></li>
+		<li><a href="#">网站建设</a></li>
+		<li class="new"></li>
+	</ul>
+	
+</body>
+</html>

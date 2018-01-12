@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin-top塌陷</title>
+	<style type="text/css">
+	/*
+	1.在外部的盒子设置一个边框
+	border: 10px solid #333;
+	*/
+		.con{
+			width: 300px;
+			height: 200px;
+			background-color: gold;
+			
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			margin-top: 50px;
+		}
+/*		2.使用伪元素类
+		.clearfix:before{
+			content: '';
+			display: table;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="box"></div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素层级</title>
+	<style type="text/css">
+		.con{
+			width: 400px;
+			height: 400px;
+			margin: 100px auto 0;
+			border: 1px solid #333;
+			position: relative;
+		}
+		.con div{
+			width: 200px;
+			height: 100px;
+			background-color: gold;
+			font-size: 20px;
+			text-align: center;
+			margin: 10px;
+			line-height: 50px;
+		}
+		body .box1{
+			position: absolute;
+			z-index: 10;
+			background-color: #36c;
+		}
+		.box2{
+			position: absolute;
+			left:30px;
+			top: 30px;
+		}
+		body .box3{
+			position: absolute;
+			left:60px;
+			top: 60px;
+			z-index: 12;
+			background-color: pink;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动</title>
+	<style type="text/css">
+		.con, .con2{
+			width: 300px;
+			/*height: 300px;*/
+			border: 1px solid #333;
+			margin: 100px auto 0;
+			
+		}
+		.con a{
+			width: 50px;
+			height: 50px;
+			background-color: gold;
+			display: inline-block; /*行内块元素*/
+			text-decoration: none;
+			line-height: 50px;
+			text-align: center;
+			margin: 10px;
+
+		}
+		.con2 a{
+			width: 50px;
+			height: 50px;
+			background-color: gold;
+			text-decoration: none;
+			line-height: 50px;
+			text-align: center;
+			margin: 10px;
+			float: left; /*左浮动*/
+		}
+/*		.con2{
+			overflow: hidden; 1.清楚浮动
+		}*/
+		/*3.加个类属性*/
+/*		.clearfix:after{
+			content: "";
+			display: table;
+			clear: both;
+		}*/
+		.clearfix:before,.clearfix:after{
+			content: "";
+			display: table;
+		}
+		.clearfix:after{
+			clear: both;
+		}
+		.clearfix{
+			zoom:1;
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+	</div>
+	<div class="con2 clearfix">
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+		<!-- <div style="clear: both"></div> 2.可以加个div，来清除浮动 -->
+	</div>
+	
+</body>
+</html>

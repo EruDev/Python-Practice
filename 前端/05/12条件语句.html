@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12条件语句</title>
+	<style type="text/css">
+		#box{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBtn = document.getElementById('btn');
+			var oBox = document.getElementById('box');
+
+			oBtn.onclick = function(){
+				if(oBox.style.display == 'none'){
+					oBox.style.display = 'block';
+				}
+				else
+				{
+					oBox.style.display = 'none';
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="切换" id="btn">
+	<div id="box"></div>
+	
+</body>
+</html>

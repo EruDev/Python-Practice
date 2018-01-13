@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>13多重判断</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			
+			if(today == '1'){
+				oBtn.onclick = alert('语文');
+			}
+			else if(today == '2'){
+				oBtn.onclick = alert('数学');
+			}
+			else if(today == '3'){
+				oBtn.onclick = alert('英语');
+			}
+			else if(today == '4'){
+				oBtn.onclick = alert('美术');
+			}
+			else if(today == '5'){
+				oBtn.onclick = alert('物理');
+			}
+			else{
+				oBtn.onclick = alert('周末不补习');
+			}
+			var oTxt = document.getElementById('txt');
+			var today = oTxt.value;
+			var oBtn = document.getElementById('btn');
+
+
+		}
+
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="txt">
+	<input type="button" name="" id="btn" value="按钮">
+	
+</body>
+</html>

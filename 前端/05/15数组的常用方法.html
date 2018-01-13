@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组的常用方法</title>
+	<script type="text/javascript">
+		var aRr = [1, 2, 3, 4]
+		var sTr = aRr.join('-')
+		// alert(sTr);
+
+		aRr.push(5) //往数组末尾增加一个5
+		// alert(aRr);
+		aRr.pop() // 删除数组中最后一个元素
+		// alert(aRr);
+		aRr.unshift(0) // 往数组头部增加一个0
+		//数组翻转
+		aRr.reverse();
+
+		var aRr2 = ['a', 'b', 'c', 'd', 'a', 'b', 'c'];
+		// splice(指定位置,删除元素的个数，增加元素的个数)
+		aRr2.splice(2,1,1,2,3);
+		alert(aRr2);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

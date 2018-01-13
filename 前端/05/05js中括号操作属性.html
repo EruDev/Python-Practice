@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js中括号操作属性</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBox1 = document.getElementById('box1');
+			var attr = 'color';
+			// []可以来操作属性
+			oBox1['style'][attr] = 'red';
+			alert(oBox1.innerHTML)
+
+			var oBox2 = document.getElementById('box2')
+			oBox2.innerHTML = "<a href='http://www.baidu.com'>百度</a>"
+
+		}
+	</script>
+</head>
+<body>
+	<div id="box1">这是一个div元素</div>
+	<div id="box2"></div>
+	
+</body>
+</html>

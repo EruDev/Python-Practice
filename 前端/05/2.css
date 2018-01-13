@@ -1,0 +1,13 @@
+body{
+	background-color: #ddd;
+}
+.box1{
+	width: 200px;
+	height: 200px;
+	background-color: #36c;
+}
+.box2{
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+}

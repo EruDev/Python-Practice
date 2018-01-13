@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js操作class</title>
+	<style type="text/css">
+		.box1{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBox = document.getElementById('box');
+			// js操作class 要指定为 className
+			oBox.className = 'box2';
+		}
+	</script>
+</head>
+<body>
+	<div class="box1" id="box"></div>
+	
+</body>
+</html>

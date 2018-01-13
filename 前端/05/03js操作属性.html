@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js操作属性</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBox = document.getElementById('box');
+			oBox.style.color = 'green';
+			// style属性中有`-`的，要使用驼峰法命名
+			oBox.style.fontSize = '20px';
+			oBox.style.background = 'gold';
+		}
+	</script>
+</head>
+<body>
+	<div id="box" style="color: red;">这是一个div标签</div>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js换肤</title>
+	<link rel="stylesheet" type="text/css" href="1.css" id="link1">
+	<script type="text/javascript">
+		// 页面加载完之后，再执行这句
+		window.onload = function(){
+			var oBtn01 = document.getElementById('btn01')
+			var oBtn02 = document.getElementById('btn02')
+			oBtn01.onclick = skip1
+			oBtn02.onclick = skip2
+		}
+		function skip1(){
+			var oLink = document.getElementById('link1');
+			oLink.href = '2.css'
+		}
+				function skip2(){
+			var oLink = document.getElementById('link1');
+			oLink.href = '1.css'
+		}
+
+	</script>
+</head>
+<body>
+	<div id="box11" class="box1"></div>
+	<div id="box22" class="box2"></div>
+	<br>
+	<input type="button" name="" value="换肤1" id="btn01">
+	<input type="button" name="" value="换肤2" id="btn02"> 
+<!-- 	
+	行间函数调用
+	<input type="button" name="" value="换肤1" onclick="skip1()">
+	<input type="button" name="" value="换肤2" onclick="skip2()"> 
+-->
+	
+</body>
+</html>

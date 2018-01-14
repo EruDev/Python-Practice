@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12获取地址栏参数</title>
+	<script type="text/javascript">
+		
+		window.onload = function(){
+
+			var Dat = window.location.search;
+			var span = document.getElementById('span1');
+
+			var arr = Dat.split('=');
+			// alert(arr);
+
+			var name = arr[1];
+
+			span.innerHTML = name;
+
+
+		}
+
+	</script>
+</head>
+<body>
+	<div>
+		欢迎<span id="span1"></span>访问我的主页!
+	</div>
+	
+</body>
+</html>

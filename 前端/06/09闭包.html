@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闭包</title>
+	<script type="text/javascript">
+		function aa(n){
+
+			var bb = 1;
+
+			function cc(){
+				alert(bb);
+				alert(n);
+			}
+			return cc;
+		}
+
+		var t = aa(2);
+		t();
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

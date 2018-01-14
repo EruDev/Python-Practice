@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>17原型模式</title>
+	<script type="text/javascript">
+		
+		function Person(name,age,job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+		}
+		Person.prototype.showname = function(){
+			alert('我的名字是'+this.name);
+		};
+		Person.prototype.showage = function(){
+			alert('年龄是'+this.age+'岁')；
+		}；
+		Person.prototype.showjob = function(){
+			alert('工作是'+this.job);
+		};
+
+		var zhang3 = new Person('zhangsan', 18, '学生');
+		var li4 = new Person('lisi', 30 '老师')；
+
+		alert(zhang3.showjob == li4.showjob);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

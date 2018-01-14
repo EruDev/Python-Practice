@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07变量作用域</title>
+	<script type="text/javascript">
+		/*
+
+			1、全局变量：在函数之外定义的变量，为整个页面公用，函数内部外部都可以访问。
+			2、局部变量：在函数内部定义的变量，只能在定义该变量的函数内部访问，外部无法访问。
+		*/
+
+		var a = 1;
+
+		function test(){
+			var b = 2;
+			var c = 3;
+
+			d = 4;
+
+			alert(b) // 弹出2
+			alert(c); // 弹出3
+		}
+		//test();
+		//alert(b); //报错 Uncaught ReferenceError: b is not defined
+		alert(d);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

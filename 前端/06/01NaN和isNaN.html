@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01NaN和isNaN</title>
+	<script type="text/javascript">
+		
+		var a = '123abc';
+		var b = 'abc123';
+		var c = '54.3add';
+		var d = 'add54.3';
+
+		var e = parseInt(a);
+		var f = parseFloat(c)
+
+		//alert(e); // 弹出123
+		//alert(c); // 弹出54.3add
+
+		var g = parseInt(b);
+		//alert(g); // 弹出NaN not a number
+
+		var h = parseFloat(d); // 弹出NaN not a number
+		//alert(h)
+
+		//alert(g==NaN); //弹出false
+		//alert(NaN==NaN); //弹出false
+
+		alert(isNaN(a)); //表示a不是一个数字
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

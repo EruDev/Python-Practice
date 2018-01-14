@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08封闭函数</title>
+	<script type="text/javascript">
+		
+		// 封闭函数:(function(){....})();
+		/*
+		(function(){
+
+			var a = 123;
+
+			function test(){
+				alert(a);
+			}
+
+			test();
+		})();
+		*/
+		// 封闭函数其他写法,在前面加 ~ 或者！都可以
+		~(function(){
+			var s = '测试';
+			alert(s);
+		})();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

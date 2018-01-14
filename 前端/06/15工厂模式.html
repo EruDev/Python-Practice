@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>15工厂模式</title>
+	<script type="text/javascript">
+		
+		function Person(name,age,job){
+			var o = new Object();
+
+			o.name = name;
+
+			o.age = age;
+
+			o.job = job;
+
+			o.showname = function(){
+				alert('我的名字是'+this.name);
+			};
+
+			o.showage = function(){
+				alert('我今年'+this.age+'岁');
+			};
+
+			o.showjob = function(){
+				alert('我的工作是'+this.job);
+			};
+
+			return o;
+		}
+
+		var zhang3 = Person('zhangsan', 18, '程序员');
+		zhang3.showname();
+		zhang3.showjob();
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

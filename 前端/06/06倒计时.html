@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<script type="text/javascript">
+		window.onload = function(){
+
+			var oDiv = document.getElementById('div');
+
+			function timer(){
+			var now = new Date();
+			var future = new Date(2018,1,25,24,0,0);
+
+			var lefts = parseInt((future-now)/1000);
+
+			var days = parseInt(lefts/86400);
+
+			var hour = parseInt(lefts%86400/3600);
+
+			var minute = parseInt(lefts%86400%3600/60);
+
+			var sec = parseInt(lefts%60);
+
+			var str = '距离2018年1月18日晚24点还剩下' + days + '天' + todou(hour) + '时' + todou(minute) + '分' + todou(sec) + '秒';
+
+			oDiv.innerHTML = str;
+
+			}
+			timer();
+
+			setInterval(timer,1000);
+			
+			// alert(days);
+
+		}
+
+		function todou(n){
+			if (n<10) {
+				return '0'+n;
+			}
+			else{
+				return n;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="div"></div>
+	
+</body>
+</html>

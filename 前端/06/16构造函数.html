@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>16构造函数</title>
+	<script type="text/javascript">
+		
+		function Person(name,age,job){
+
+			this.name = name;
+			this.age = age;
+			this.job = job;
+
+			this.showname = function(){
+				alert(this.name);
+			}
+
+			this.showage = function(){
+				alert(this.age);
+			}
+
+			this.showjob = function(){
+				alert(this.job)
+			}
+		}
+
+		var zhang3 = new Person('zhangsan', 22, '程序员');
+
+		zhang3.showage();
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

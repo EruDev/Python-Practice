@@ -1,2 +1,2 @@
 # Python-Practice
-Python小练习
+Python练习

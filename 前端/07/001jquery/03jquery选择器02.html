@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03jquery选择器02</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+
+			$('#div1').nextAll('p').css({color:'red'});
+
+			//选择上一级的父元素
+			$('#span01').parent().css({height:'100px', width:'100px', background:'gold'});
+
+			//选择最近的元素,可以是父级，也可以是子集
+			$('#span02').closest('div').css({height:'100px', width:'100px', background:'pink', marginTop:'10px'});
+
+			//和$('#list li')不同的是不能回到父级
+			//$('$list')可以通过end()回到父级
+			$('#list').children().css({background:'gold', fontSize:'30px', marginBottom:'10px'})
+				.end().css({background:'green'});
+
+			//li:eq(2)表示选择第三个li元素，siblings代表同级元素的意思
+			$('#list2 li:eq(2)').css({background:'gold'}).siblings().css({background:'red'});
+
+			$('#div2').find('.box').css({background:'gold', width:'200px', height:'200px'});
+
+
+		});
+
+	</script>
+</head>
+<body>
+	<div id="div1">这是一个div元素</div>
+	<div>这是第二个div元素</div>
+	<p>这是一个p元素</p>
+
+
+	<div>
+		<a href="#">百度</a>
+		<span id="span01">span元素</span>
+	</div>
+
+	<div>111
+		<div>111
+			<a href="#">腾讯</a>
+			<span id="span02">span元素</div>
+			<span>第二个span元素</span>
+		</div>
+	</div>
+	
+
+	<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+
+	<ul id="list2">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+
+	<div id="div2">
+		<div class="box">
+			<span id="span03">span元素</span>
+		</div>
+		
+	</div>
+</body>
+</html>

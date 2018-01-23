@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for name in hero %}
+<ul>
+    {% if forloop.counter|divisibleby:'2' %}
+        <li style="color:red">{{ forloop.counter }}: {{ name.hname }}</li>
+    {% else %}
+        <li style="color:#36c">{{ forloop.counter }}: {{ name.hname }}</li>
+    {% endif %}
+</ul>
+{% empty %}
+    <li>啥也没找到</li>
+{% endfor %}
+</body>
+</html>
